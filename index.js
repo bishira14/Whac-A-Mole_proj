@@ -3,7 +3,7 @@ const resultElement = document.querySelector('.score span')
 const timerElement = document.querySelector('.timer span')
 let result = 0;
 let currentPosition = null;
-let timer = 5;
+let timer = 60;
 function move(){
   circle.forEach(element => {
   element.classList.remove('mole');
@@ -17,18 +17,15 @@ function move(){
 
 let makeMove = setInterval(move, 500);
 
-circle.forEach(element => {
+   circle.forEach(element => {
    element.addEventListener('click', equals);
    function equals(){
     if(element.id === currentPosition.id){
-     result++;
-     resultElement.textContent = result;
-    }
-    if(timer == 0){
-      circle.forEach(element => {
-        element.removeEventListener('click', equals);
-      });
-    }
+      if(timer != 0){
+        result++;
+        resultElement.textContent = result;
+      }
+   }
    }
 })
 
