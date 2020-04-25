@@ -1,9 +1,15 @@
+const replay = document.querySelector('.replay');
 const circle = document.querySelectorAll('.circle');
 const resultElement = document.querySelector('.score span')
 const timerElement = document.querySelector('.timer span')
 let result = 0;
 let currentPosition = null;
 let timer = 60;
+
+replay.addEventListener('click', function(){
+    return location.reload();
+  });
+
 function move(){
   circle.forEach(element => {
   element.classList.remove('mole');

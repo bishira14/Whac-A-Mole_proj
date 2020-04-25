@@ -19,12 +19,25 @@ body{
   display:flex;
   justify-content: space-between;
   align-items: center;
+  padding:20px;
 }
 .stats h2 {
   background-color: rgb(119, 187, 119);
   padding:5px;
   border-radius: 7px;
-  margin:20px;
+}
+.stat1{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+.replay{
+  width:40px;
+  text-align: center;
+  background-color: rgb(119, 187, 119);
+  border-radius: 7px;
+  margin-right: 3px;
+  cursor:pointer;
 }
 .container{
  display:flex;
