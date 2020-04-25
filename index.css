@@ -55,6 +55,7 @@ body{
   border-radius:50%;
   background-color:rgba(230, 172, 0, 0.8);
   margin:1px;
+  outline:none;
 }
 
 .mole{
